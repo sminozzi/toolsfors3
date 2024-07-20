@@ -1,27 +1,39 @@
-=== Tools For S3 Amazon AWS Web Services ===
+#  WordPress Tools For S3 Amazon Object Storage AWS Web Services Plugin #
 Contributors: sminozzi
-Tags: amazon web services, amazon, tools for s3, s3 aws Amazon, aws Amazon Cloud Browse, aws s3 object storage, amazon aws s3 object storage 
-
-
+Tags: amazon web services, amazon, tools for s3, s3 aws Amazon, aws Amazon Cloud Browse
 Requires at least: 5.2
-Tested up to: 6.1
-Stable tag: 2.00
+Tested up to: 6.6
+Stable tag: 2.22
 License: GPLv2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Provides you ability to Delete Files or Folders and Create Folders on your s3 account and Download/Upload Files from/to your computer on S3 Amazon object storage.
-You can also transfer folders to/from your server and your s3 cloud.
+# S3 Amazon AWS object storage: Easily delete, download or upload files or folders between S3 AWS object storage and your server or computer. #
+
 == Description ==
 
 **Tools For S3 AWS Amazon Web Services**
-★★★★★<br>
 
-This tool provides you ability to Download, Delete, Upload files and Create Folders on S3 Amazon AWS object storage.
-The files will be uploaded and download from/to your local computer directly to your S3 storage space. You don’t have to upload files to your server first anymore. Then, without occupying server storage. You can also make transfer from / to your server to your cloud s3 AWS Amazon account.
-It is a Bucket Browser.
 
-In this version, the upload and download file size are limited to 100 Mb and the transfer from/to your cloud are limited a 1GB.
-We are working to increase this limit and the new version will be available soon.
+>This plugin connect you with your Amazon AWS S3 Object Storage, using S3-compatible API.
+>If the file exists on destination, will be overwrited.
+
+Effortless S3 Amazon S3 Management:
+
+This plugin simplifies managing your S3 Amazon AWS object storage. Upload, download, delete, and create folders directly within your S3 storage, eliminating the need for server uploads.
+
+==Flexible File Transfers:==
+
+Move files seamlessly between your server, local computer, and Amazon S3 storage, without occupying server storage. Enjoy current transfer limits of 1GB per file, with larger capacities coming soon!
+
+==Granular Backups with Reduced Restoration Time:==
+
+Perform complete backups of your website to your S3 storage. Unlike traditional backups, you can restore individual files or folders quickly, minimizing the amount of data needed and reducing the time and the risk of overwriting recent changes.
+
+==Free and Easy Site Migrations:==
+
+Move or clone your website with ease, without paying any fees and without downtime between hostings, even if your current hosting provider doesn't offer cPanel/Plesk or you're migrating to a different domain and hosting altogether.
+
+<a href="https://toolsfors3.com/">Learn More at Plugin Site</a>
 
 == Important ==
 
@@ -31,9 +43,9 @@ Run only one instance of this plugin each time.
 
 PHP Memory Limit:         256M
 WordPress Memory Limit:   256M
-Upload Max Size:          120M
-Post Max Size:            120M
-Upload Max Filesize:      120M
+Upload Max Size:          1000M
+Post Max Size:            1000M
+Upload Max Filesize:      1000M
 Enable the php-curl module in your PHP setup
 
 To know your server  info, install our free plugin WPTOOLS.
@@ -49,13 +61,18 @@ To know your server  info, install our free plugin WPTOOLS.
 
 <a href="https://siterightaway.net/troubleshooting/">Plugin Troubleshooting</a>
 
+<a href="https://www.youtube.com/watch?v=J6kHizfPl18">Demo Video</a>
+
+
 <a href="https://database-backup.com/">Free Plugin to Generate a site database file for Backup</a>
 This easy to use free plugin (database-backup) can generate a database backup file with just one click. 
 
+<a href="https://bigdumprestore.com/">Free Plugin to Restore a large or very large site database file</a>
+This easy to use free plugin (bigdump-restore) can instal the bigdump.php free script to friendly restore your database backup.
+ 
 
 == Multisite ==
 This plugin was not tested with Multisite. 
-
 
 
 == Installation ==
@@ -72,6 +89,15 @@ Extract the zip file and just drop the contents in the wp-content/plugins/ direc
 
 == Frequently Asked Questions ==
 
+=Can I do a Complete Backup to Cloud with this plugin?=
+Yes, sure. Read this page with complete details:
+<a href="https://ToolsFors3.com/backup-your-site/">Complete Backup Instructions</a>
+
+=Can I move or clone my site without paying any fees and without downtime?=
+Yes, sure. Read this page with complete details:
+<a href="https://ToolsForS3.com/cloning-or-moving-site/">Complete Move Instructions</a>
+
+
 =How to Install?=
 
 1) Install via wordpress.org
@@ -87,48 +113,31 @@ Extract the zip file and just drop the contents in the wp-content/plugins/ direc
 
 Depends of your computer and server, Server memory, internet connection and the s3 tool service.
 
-== Tags ==
-amazon s3 object Storage
-what is s3 object storage	
-aws s3 object storage	
-s3 object storage viewer
-open source s3 object storage	
-s3 object storage alternative	
-s3 object storage delete	
-s3 object storage open source	
 
-== Italiano Tags ==
-Questo Plugin WP ti connette con il tuo AWS Amazon S3 Object Storage, utilizzando l’API compatibile con S3 e ti offre la possibilità di scaricare, eliminare, caricare e creare oggetti sullo storage di S3 AWS Amazon Web Services. Elimina le complessità operative e acquisisci nuove informazioni. L’interfaccia utente Web semplifica la gestione di file e bucket con pochi clic e funzionalità di trascinamento della selezione.
-caricare oggetti su s3
-caricare degli oggetti su s3
-carica oggetti su s3
-memorizzare un oggetto in amazon s3
-utilizzo di oggetti in amazon s3
-caricamento degli oggetti
-archiviare e recuperare dati s3
-memorizzazione dati in s3
-gestire s3
-storage di oggetti
-s3 object storage viewer
+=Got Error 4XX to Upload File from Desktop to Cloud=
+If you got "413 Request Entity Too Large - File Upload Issue" or similar, 
+usually is a question of server upload tunning. Look the Server Requirements above.
+Sometines, large files upload are also blocked by Mod Security on your server.
 
 
-== Português Tags ==
-Este Plugin WP conecta você ao seu AWS Amazon S3 Object Storage e fornece a capacidade de baixar, excluir, carregar arquivos e criar pastas no armazenamento de objetos S3 AWS Amazon (Amazon Web Services). Elimine complexidades operacionais e obtenha novos insights. O plugin facilita o gerenciamento de arquivos e buckets com apenas alguns cliques e a funcionalidade de arrastar e soltar.
-Armazenar Dados em S3
-backup e restauração
-armazenar e recuperar dados
-Administrar S3
-Gerir S3
-armazenar em um bucket
-armazenamento de objetos 
-gerenciamento de s3
-armazenar em s3
-arquivar em S3
-administração do s3
+
 
 
 
 == Changelog ==
-2023-02 05 - Version 1.01 - Minor Improvements and increased limit to 1Gb.
+2024-07-18   Version 2.22 - Small Improvements.
+2024-07-17   Version 2.21 - Small Improvements.
+2024-06-29   Version 2.20 - Small Improvements.
+2024-06-28   Version 2.19 - Small Improvements.
+2024-06-27   Version 2.15/16 - Small Improvements.
+2024-06-27   Version 2.14 - Small Improvements.
+2024-06-21   Version 2.13 - Improved readme file
+2024-01-17   Version 2.08/09 - Fixed Javascript error "modal..."
+2023-12-27 - Version 2.07 - Improved errors control.
+2023-10-17 - Version 2.06 - Improved errors control.
+2023-09-05 - Version 2.05 - Improved errors control.
+2023-08-29 - Version 2.02/2.04 - Improved errors control.
+2023-03-08 - Version 2.01 - Increased Upload and Download Limit.
+2023-02-05 - Version 2.00 - Minor Improvements and increased limit to 1Gb.
 2023-01-27 - Version 1.01 - Improvements
-2023-01 26 - Version 1.00 - Initial release
+2023-01-26 - Version 1.00 - Initial release
